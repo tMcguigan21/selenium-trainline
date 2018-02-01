@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1517500017117" stop="1517500093202" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : at</name>
+    <title>Default Suite : at</title>
+    <test-cases>
+        <test-case start="1517500020287" stop="1517500092009" status="passed">
+            <name>registerTest</name>
+            <description>Test to see if the user can Register and be taken back to the homepage</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="at"/>
+                <label name="testClass" value="test.release.one.RegisterANewUserTest"/>
+                <label name="testMethod" value="registerTest"/>
+                <label name="host" value="ISVGRELT0001438"/>
+                <label name="thread" value="12724@ISVGRELT0001438.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
