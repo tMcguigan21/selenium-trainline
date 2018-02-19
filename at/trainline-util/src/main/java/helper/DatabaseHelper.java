@@ -27,15 +27,15 @@ public class DatabaseHelper
 
     public static ResultSet executeQuery(String sql)
     {
-        return executeQuery(sql, Database.MAST);
+        return executeQuery(sql, Database.DATABASE);
     }
 
     public static void insertQuery(String sql)
     {
-        insertQuery(sql, Database.MAST);
+        insertQuery(sql, Database.DATABASE);
     }
 
-    public static ResultSet executeQuery(String sql, Database database)
+    private static ResultSet executeQuery(String sql, Database database)
     {
         try
         {
@@ -48,7 +48,7 @@ public class DatabaseHelper
         return null;
     }
 
-    public static void insertQuery(String sql, Database database)
+    private static void insertQuery(String sql, Database database)
     {
         try
         {
@@ -81,10 +81,10 @@ public class DatabaseHelper
 
     public static void runSqlFile(String resourceFilePath, String... values)
     {
-        runSqlFile(resourceFilePath, Database.MAST, values);
+        runSqlFile(resourceFilePath, Database.DATABASE, values);
     }
 
-    public static void runSqlFile(String resourceFilePath, Database database, String... values)
+    private static void runSqlFile(String resourceFilePath, Database database, String... values)
     {
         URL sqlFileURL = Resources.getResource(resourceFilePath);
         ScriptRunner scriptRunner = new ScriptRunner(database.getCon(), false, true);
@@ -102,9 +102,7 @@ public class DatabaseHelper
 
     public enum Database
     {
-
-        IHS("ihs_db"),
-        MAST("mast_db");
+        DATABASE("*Name of DB*");
 
         private Connection con;
 
