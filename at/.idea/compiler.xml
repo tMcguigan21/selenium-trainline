@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="at" target="1.8" />
+      <module name="automation" target="1.8" />
       <module name="trainline-page" target="1.8" />
       <module name="trainline-user-journey-test" target="1.8" />
       <module name="trainline-util" target="1.8" />

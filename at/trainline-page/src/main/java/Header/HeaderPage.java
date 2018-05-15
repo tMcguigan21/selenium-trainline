@@ -23,6 +23,10 @@ public class HeaderPage extends BasePage<HeaderPage>
     @FindBy(css = "[data-test*='register-link']")
     private WebElement registerTextButton;
 
+    @Name("Sign out button")
+    @FindBy(css = "[data-test='guest-signOut-link']")
+    private WebElement signOutButton;
+
     @Step("Is company logo present")
     public boolean isCompanyLogoPresent()
     {
@@ -43,5 +47,11 @@ public class HeaderPage extends BasePage<HeaderPage>
         AppHelper.scrollToView(registerTextButton);
         registerTextButton.click();
         return PageFactory.newInstance(RegisterPage.class);
+    }
+
+    @Step("Is Sign out button visible")
+    public boolean isSignOutButtonDisplayed()
+    {
+        return signOutButton.isDisplayed();
     }
 }

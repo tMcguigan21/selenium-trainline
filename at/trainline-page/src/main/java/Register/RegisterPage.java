@@ -48,7 +48,7 @@ public class RegisterPage extends BasePage<RegisterPage>
 
     @Visible
     @Name("Create account button")
-    @FindBy(id = "dpa1984Consent")
+    @FindBy(css = "[data-test='register-button']")
     private WebElement createAccountButton;
 
     @Visible

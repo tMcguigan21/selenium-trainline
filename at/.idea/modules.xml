@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/at.iml" filepath="$PROJECT_DIR$/at.iml" />
+      <module fileurl="file://$PROJECT_DIR$/automation.iml" filepath="$PROJECT_DIR$/automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/trainline-page/trainline-page.iml" filepath="$PROJECT_DIR$/trainline-page/trainline-page.iml" />
       <module fileurl="file://$PROJECT_DIR$/trainline-user-journey-test/trainline-user-journey-test.iml" filepath="$PROJECT_DIR$/trainline-user-journey-test/trainline-user-journey-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/trainline-util/trainline-util.iml" filepath="$PROJECT_DIR$/trainline-util/trainline-util.iml" />
